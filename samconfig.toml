@@ -1,0 +1,19 @@
+version = 0.1
+
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "aurora-public-demo"
+s3_bucket = "sam-cli-managed-default-samclisourcebucket-1w2x3y4z5a6b"
+s3_prefix = "aurora-public-demo"
+region = "us-east-2"
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
+disable_rollback = false
+image_repositories = []
+template_file = "template.yaml"
+parameter_overrides = ""
+resolve_s3 = true
+no_fail_on_empty_changeset = false
+notification_arns = []
+tags = "stack=demo"
